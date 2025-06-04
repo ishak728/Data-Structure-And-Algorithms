@@ -3,6 +3,8 @@ package com.example.datastructureandalgorithms
 fun main() {
     val words = listOf("listen", "silent", "enlist")
     isAnagram(words)
+
+
 }
 
 fun isAnagram(words: List<String>) {
@@ -19,3 +21,6 @@ fun isAnagram(words: List<String>) {
     println(count)
 
 }
+
+
+
