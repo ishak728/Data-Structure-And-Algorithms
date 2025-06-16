@@ -26,8 +26,8 @@ fun isParenthesesBalanced(expression: String): Boolean {
 
 fun main() {
     val i1 = "((a+b)*c)"
-    val i2 = "(a+b]*c)"
+  
 
     println(isParenthesesBalanced(i1))
-    println(isParenthesesBalanced(i2))
+    
 }
