@@ -1,4 +1,4 @@
-package com.example.datastructureandalgorithms.stack
+package com.example.datastructureandalgorithms.stack.customestack
 
 class MyCustomStack<T> {
     private val items= mutableListOf<T>()

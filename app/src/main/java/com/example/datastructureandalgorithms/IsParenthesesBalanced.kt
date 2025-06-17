@@ -11,23 +11,29 @@ fun isParenthesesBalanced(expression: String): Boolean {
 
 
             ')', ']', '}' -> {
+
+
                 if (stack.isEmpty()) return false
+
                 val t = stack.removeFirst()
-                if ((ch == ')' && t != '(') ||
-                    (ch == ']' && t != '[') ||
-                    (ch == '}' && t != '{')) {
+                if ((ch == ')' && t != '(') || (ch == ']' && t != '[') || (ch == '}' && t != '{')) {
                     return false
                 }
             }
         }
     }
+
+
     return stack.isEmpty()
 }
 
 fun main() {
     val i1 = "((a+b)*c)"
-  
+
+
+
 
     println(isParenthesesBalanced(i1))
-    
+
+
 }
