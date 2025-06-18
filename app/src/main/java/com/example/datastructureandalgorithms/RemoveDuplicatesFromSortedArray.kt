@@ -13,22 +13,27 @@ package com.example.datastructureandalgorithms
 //space Complexity:O(1)
 fun main() {
     val nums = mutableListOf(1, 1, 2, 3, 3, 4)
-    removeDuplicate(nums)
+    println(removeDuplicate(nums))
 
 }
 
 //1, 2, 2, 2,2, 3, 4, 5, 5)
 //1, 1, 2, 3, 3, 4
-fun removeDuplicate(nums: MutableList<Int>) {
+fun removeDuplicate(nums: MutableList<Int>): MutableList<Int> {
+
+    if (nums.isEmpty()) return nums
 
     var index=1
     for (i in 1 until nums.size){
-        if (nums[i]!=nums[index]){
+        if (nums[i]!=nums[index-1]){
             nums[index]=nums[i]
             index++
         }
     }
 
-    println(nums.subList(0,index))
+   return nums.subList(0,index)
 
 }
+
+
+
