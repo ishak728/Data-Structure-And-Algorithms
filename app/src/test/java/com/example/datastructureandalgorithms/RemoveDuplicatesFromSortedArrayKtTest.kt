@@ -15,7 +15,7 @@ import org.junit.Test
    val result=removeDuplicate(nums)
 
    assertEquals(listOf(1,2,3,4,5),result)
-//   assertArrayEquals(arrayOf())
+//   assertArrayEquals()
 
 
   }
